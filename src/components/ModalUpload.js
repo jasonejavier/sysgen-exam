@@ -68,7 +68,6 @@ function ModalUpload({ visible = false, setVisible, setFilters, setAppend }) {
   };
 
   const onFinish = (values) => {
-    console.log(values);
     const { file: files, album } = values;
     const formData = new FormData();
     files.forEach((file) => {
